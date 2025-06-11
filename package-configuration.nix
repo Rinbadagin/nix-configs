@@ -45,5 +45,12 @@
 			deadbeef
       xorg.xbacklight
       prismlauncher
+      file
+      exiftool
+      binwalk
+      ghidra
+      zsteg
+      gdb
+      wireshark
 	];
 }
