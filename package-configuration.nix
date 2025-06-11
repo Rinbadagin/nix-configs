@@ -54,5 +54,6 @@
       wireshark
       tesseract
       anki
+      ardour
 	];
 }
