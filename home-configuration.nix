@@ -23,13 +23,25 @@ in
 			enable = true;
 			enableZshIntegration = true;
 		};
+		programs.tmux = {
+			enable = true;
+			shell = "${pkgs.zsh}/bin/zsh";
+		};
+		programs.git = {
+			enable = true;
+			userName = "Rinbadagin";
+			extraConfig = {
+				init.defaultBranch = "main";
+				safe.directory = "/etc/nixos";
+			};
+		};
 		programs.zsh = {
 			enable = true;
 			autosuggestion.enable = true;
 			enableCompletion = true;
 			history.size = 1000000;
 			shellAliases = {
-				editnix = "sudo vim /etc/nixos/ && nixos-rebuild switch";
+				editnix = "sudo -- sh -c \"vim /etc/nixos/ && nixos-rebuild switch\" && cd /etc/nixos/ && git add . && git commit -m \"Revision $(date)\" && git push";
 			};
 			oh-my-zsh = {
 				enable = true;
