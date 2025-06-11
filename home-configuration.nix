@@ -29,6 +29,9 @@ in
 		};
 		programs.kitty = {
 			enable = true;
+			extraConfig = ''
+				background_opacity 0.9
+				'';
 		};
 		programs.git = {
 			enable = true;
