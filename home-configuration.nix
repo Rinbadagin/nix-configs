@@ -27,6 +27,9 @@ in
 			enable = true;
 			shell = "${pkgs.zsh}/bin/zsh";
 		};
+		programs.kitty = {
+			enable = true;
+		};
 		programs.git = {
 			enable = true;
 			userName = "Rinbadagin";
