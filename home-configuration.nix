@@ -49,8 +49,8 @@ in
 			initContent = lib.mkOrder 1500 ''
 				if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 					tmux attach-session -t default || tmux new-session -s default
-				fi
-				'';
+						fi
+						'';
 			shellAliases = {
 				editnix = "sudo -- sh -c \"vim /etc/nixos/ && nixos-rebuild switch\" && cd /etc/nixos/ && git add . && git commit -m \"Revision $(date)\" && git push";
 			};
@@ -62,5 +62,18 @@ in
 		};
 		home.stateVersion = "25.05";
 		/* Here goes the rest of your home-manager config, e.g. home.packages = [ pkgs.foo ]; */
+	};
+	home-manager.users.root = {
+		programs.neovim = {
+			enable = true;
+			plugins = with pkgs.vimPlugins; [ vim-airline neo-tree-nvim lspsaga-nvim ];
+			extraConfig = ''
+				set autoindent expandtab tabstop=2 shiftwidth=2
+				set number relativenumber
+				'';
+			vimAlias = true;
+			viAlias = true;
+		};
+		home.stateVersion = "25.05";
 	};
 }
