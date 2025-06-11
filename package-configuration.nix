@@ -44,5 +44,6 @@
 			git
 			deadbeef
       xorg.xbacklight
+      prismlauncher
 	];
 }
