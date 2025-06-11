@@ -36,7 +36,6 @@
 # $ nix search wget
 	environment.systemPackages = with pkgs; [
 		wget
-			firefox
 			tmux
 			gimp
 			libreoffice
@@ -44,5 +43,6 @@
 			intel-gpu-tools
 			git
 			deadbeef
+      xorg.xbacklight
 	];
 }
