@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 let
 home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
 in
@@ -46,6 +46,11 @@ in
 			autosuggestion.enable = true;
 			enableCompletion = true;
 			history.size = 1000000;
+			initContent = lib.mkOrder 1500 ''
+				if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+					tmux attach-session -t default || tmux new-session -s default
+				fi
+				'';
 			shellAliases = {
 				editnix = "sudo -- sh -c \"vim /etc/nixos/ && nixos-rebuild switch\" && cd /etc/nixos/ && git add . && git commit -m \"Revision $(date)\" && git push";
 			};
