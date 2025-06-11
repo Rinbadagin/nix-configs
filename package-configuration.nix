@@ -52,5 +52,6 @@
       zsteg
       gdb
       wireshark
+      tesseract
 	];
 }
