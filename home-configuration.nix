@@ -52,7 +52,7 @@ in
 						fi
 						'';
 			shellAliases = {
-				editnix = "sudo -- sh -c \"vim /etc/nixos/ && echo Commit message? && msg=$(read -e) && nixos-rebuild switch\" && cd /etc/nixos/ && git add . && git commit -m \"Revision $msg $(date)\" && git push";
+				editnix = "sudo -- sh -c \"vim /etc/nixos/ && echo Commit message? && msg=\$(read -e) && nixos-rebuild switch\" && cd /etc/nixos/ && git add . && git commit -m \"Revision $msg $(date)\" && git push";
         tess = "f(){tesseract -l eng $@ | echo}f";
 			};
 			oh-my-zsh = {
