@@ -53,5 +53,6 @@
       gdb
       wireshark
       tesseract
+      anki
 	];
 }
