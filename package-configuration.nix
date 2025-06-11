@@ -16,5 +16,6 @@
 			vulkan-tools
 			intel-gpu-tools
 			git
+			deadbeef
 	];
 }
