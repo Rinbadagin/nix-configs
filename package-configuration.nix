@@ -17,6 +17,9 @@
         "privacy.trackingprotection.enabled" = true;
         "privacy.trackingprotection.fingerprinting.enabled" = true;
         "privacy.trackingprotection.socialtracking.enabled" = true;
+        "privacy.clearOnShutdown.history" = false;
+        "privacy.clearOnShutdown.cookies" = false;
+        "network.cookie.lifetimePolicy" = 0;
       };
       ExtensionSettings = {
         "jid1-ZAdIEUB7XOzOJw@jetpack" = {
@@ -55,5 +58,5 @@
       tesseract
       anki
       ardour
-  ];
+      ];
 }

@@ -49,10 +49,10 @@ in
       initContent = lib.mkOrder 1500 ''
         if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
           tmux attach-session -t default || tmux new-session -s default
-            fi
-            '';
+        fi
+        '';
       shellAliases = {
-        editnix = "sudo -- sh -c \"vim /etc/nixos/ && echo Commit message? && msg=\$(read -e) && nixos-rebuild switch\" && cd /etc/nixos/ && git add . && git commit -m \"Revision $msg $(date)\" && git push";
+        editnix = "sudo -- sh -c \"vim /etc/nixos/ && echo Commit message? && msg=\\\$(read -e) && nixos-rebuild switch\" && cd /etc/nixos/ && git add . && git commit -m \"Revision $msg $(date)\" && git push";
         tess = "f(){tesseract -l eng $@ | echo}f";
       };
       oh-my-zsh = {
