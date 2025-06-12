@@ -8,12 +8,8 @@
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
       Preferences = {
-        "cookiebanners.service.mode.privateBrowsing" = 2; # Block cookie banners in private browsing
-          "cookiebanners.service.mode" = 2; # Block cookie banners
-          "privacy.donottrackheader.enabled" = true;
+        "webgl.disabled" = false;
         "privacy.resistFingerprinting" = false;
-        "privacy.trackingprotection.emailtracking.enabled" = true;
-        "privacy.trackingprotection.socialtracking.enabled" = true;
         "privacy.clearOnShutdown.history" = false;
         "privacy.clearOnShutdown.cookies" = false;
         "network.cookie.lifetimePolicy" = 0;
