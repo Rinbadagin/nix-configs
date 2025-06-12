@@ -47,12 +47,10 @@ in
       enableCompletion = true;
       history.size = 1000000;
       initContent = lib.mkOrder 1500 ''
-        if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-          tmux attach-session -t default || tmux new-session -s default
-        fi
+        source /etc/nixos/scripts/runtmux.zsh
         '';
       shellAliases = {
-        editnix = "sudo -- sh -c \"vim /etc/nixos/ && echo Commit message? && msg=\\\$(read -e) && nixos-rebuild switch\" && cd /etc/nixos/ && git add . && git commit -m \"Revision $msg $(date)\" && git push";
+        editnix = "/etc/nixos/scripts/editnix.zsh";
         tess = "f(){tesseract -l eng $@ | echo}f";
       };
       oh-my-zsh = {
