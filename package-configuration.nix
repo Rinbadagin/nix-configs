@@ -51,5 +51,6 @@
       tesseract
       anki
       ardour
+      gnome-tweaks
       ];
 }
