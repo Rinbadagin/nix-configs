@@ -52,5 +52,7 @@
       anki
       ardour
       gnome-tweaks
+      kicad
+      # new_pkg
       ];
 }
