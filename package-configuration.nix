@@ -53,6 +53,7 @@
       ardour
       gnome-tweaks
       kicad
+      kdePackages.kdeconnect-kde
       # new_pkg
       ];
 }
