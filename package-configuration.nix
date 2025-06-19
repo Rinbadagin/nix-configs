@@ -54,6 +54,7 @@
       gnome-tweaks
       kicad
       kdePackages.kdeconnect-kde
+      tailscale
       # new_pkg
       ];
 }
