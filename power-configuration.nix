@@ -5,7 +5,7 @@
 { config, pkgs, ... }:
 
 {
-  services.thermald.enable = true;
+  # services.thermald.enable = true;
   services.power-profiles-daemon.enable = false;
 
   services.tlp = {
