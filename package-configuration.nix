@@ -59,6 +59,7 @@
       devenv
       ripgrep
       libremines
+      komorebi
       # new_pkg
       ];
 }
