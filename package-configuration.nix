@@ -56,6 +56,7 @@
       gnome-tweaks
       kicad
       kdePackages.kdeconnect-kde
+      devenv
       # new_pkg
       ];
 }
