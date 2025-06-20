@@ -57,6 +57,7 @@
       kicad
       kdePackages.kdeconnect-kde
       devenv
+      ripgrep
       # new_pkg
       ];
 }
