@@ -58,6 +58,7 @@
       kdePackages.kdeconnect-kde
       devenv
       ripgrep
+      libremines
       # new_pkg
       ];
 }
