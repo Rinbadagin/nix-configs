@@ -59,7 +59,9 @@
       devenv
       ripgrep
       libremines
-      komorebi
+      mpvpaper
+      vlc
+      waytrogen
       chafa
       # new_pkg
       ];
