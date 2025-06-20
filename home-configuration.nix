@@ -5,6 +5,7 @@ in
 {
 	imports = [
 		(import "${home-manager}/nixos")
+    ./modules/oneko_start.nix
 	];
 	home-manager.useGlobalPkgs = true;
 	home-manager.users.klara = {
