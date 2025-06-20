@@ -60,6 +60,7 @@
       ripgrep
       libremines
       komorebi
+      chafa
       # new_pkg
       ];
 }
