@@ -11,7 +11,7 @@ in
     /* The home.stateVersion option does not have a default and must be set */
     programs.neovim = {
       enable = true;
-      plugins = with pkgs.vimPlugins; [ vim-airline neo-tree-nvim lspsaga-nvim ];
+      plugins = with pkgs.vimPlugins; [ vim-airline neo-tree-nvim lspsaga-nvim telescope-fzf-native-nvim ];
       extraConfig = ''
         set autoindent expandtab tabstop=2 shiftwidth=2
         set number relativenumber
