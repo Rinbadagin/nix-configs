@@ -36,7 +36,7 @@ in
 		programs.kitty = {
 			enable = true;
 			extraConfig = ''
-				background_opacity 0.9
+				background_opacity 0.7
 				'';
 		};
 		programs.git = {
