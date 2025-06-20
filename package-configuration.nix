@@ -63,6 +63,7 @@
       vlc
       waytrogen
       chafa
+      (callPackage ./hanabi.nix{}).hanabi
       # new_pkg
       ];
 }
