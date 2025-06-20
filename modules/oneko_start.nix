@@ -10,11 +10,11 @@
       wantedBy = [ "graphical-session.target" ];
 
     serviceConfig = {
-      type = "simple";
-      environment = "WAYLAND_DISPLAY=wayland-0";
+      Type = "simple";
+      Environment = "WAYLAND_DISPLAY=wayland-0";
       # Environment = "PATH=/run/wrappers/bin:/etc/profiles/per-user/root/bin:/nix/var/nix/profiles/default/bin:/run/current-system/sw/bin";
-      execStart = "${pkgs.oneko}/bin/oneko";
-      remainAfterExit = true;
+      ExecStart = "${pkgs.oneko}/bin/oneko";
+      RemainAfterExit = true;
     };
   };
 }
