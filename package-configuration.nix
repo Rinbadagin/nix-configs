@@ -64,6 +64,9 @@
       waytrogen
       chafa
       (callPackage ./hanabi.nix{}).hanabi
+      gnomeExtensions.media-controls
+      gnomeExtensions.desktop-clock
+      gnomeExtensions.desktop-icons-ng-ding
       # new_pkg
       ];
 }
