@@ -3,8 +3,10 @@
 
     plymouth = {
       enable = true;
-      theme = "blåhaj";
-      themePackages = pkgs.plymouth-bluhaj-theme;
+      theme = "blahaj"; # "blåhaj";
+      themePackages = with pkgs; [
+        (plymouth-blahaj-theme)
+      ]; 
     };
 
 # Enable "Silent boot"

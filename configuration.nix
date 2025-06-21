@@ -12,6 +12,7 @@
       ./package-configuration.nix
       ./user-configuration.nix
       ./home-configuration.nix
+      ./boot/plymouth.nix
     ];
 
 # Bootloader.
