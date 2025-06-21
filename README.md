@@ -8,3 +8,7 @@ Contents:
 * user-configuration.nix - Configures users (excluding home-manager stuff)
 * package-configuration.nix - System packages
 * home-configuration.nix - System-wide home-manager
+
+* modules/ - modules (?!)
+* scripts/ - shell scripts to be used elsewhere
+* derivations/ - derivations. hopefully won't be much in here

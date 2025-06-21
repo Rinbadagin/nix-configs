@@ -1,3 +1,6 @@
+# from https://discourse.nixos.org/t/gnome-extention-hanabi-on-nixos/36750/16
+# includes a change to the git references to be updated for gnome 48
+# luckily still compiles and runs fine
 {pkgs, stdenv, fetchFromGitHub }:
 {
 	hanabi = stdenv.mkDerivation rec {
