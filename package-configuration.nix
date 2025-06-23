@@ -67,6 +67,7 @@
       gnomeExtensions.media-controls
       gnomeExtensions.desktop-clock
       gnomeExtensions.desktop-icons-ng-ding
+      lutris
       # new_pkg
       ];
 }
