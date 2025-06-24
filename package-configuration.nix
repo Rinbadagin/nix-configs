@@ -68,6 +68,7 @@
       gnomeExtensions.desktop-clock
       gnomeExtensions.desktop-icons-ng-ding
       lutris
+      retroarch-full
       # new_pkg
       ];
 }
