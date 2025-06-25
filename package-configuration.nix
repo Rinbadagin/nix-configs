@@ -69,6 +69,7 @@
       gnomeExtensions.desktop-icons-ng-ding
       lutris
       retroarch-full
+      darktable
       # new_pkg
       ];
 }
