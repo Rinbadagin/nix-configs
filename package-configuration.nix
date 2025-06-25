@@ -70,6 +70,7 @@
       lutris
       retroarch-full
       darktable
+      lmms
       # new_pkg
       ];
 }
