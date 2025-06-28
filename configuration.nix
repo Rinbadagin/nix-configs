@@ -89,6 +89,7 @@
 # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  nix.settings.trusted-users = [ "root" "klara" ];
 
 # Some programs need SUID wrappers, can be configured further or are
 # started in user sessions.
