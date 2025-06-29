@@ -71,6 +71,7 @@
       retroarch-full
       darktable
       lmms
+      art
       # new_pkg
       ];
 }
