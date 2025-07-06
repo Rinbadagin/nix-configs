@@ -33,6 +33,12 @@ in
         safe.directory = "/etc/nixos";
       };
     };
+    programs.gh = {
+      enable = true;
+      gitCredentialHelper = {
+        enable = true;
+      };
+    };
     programs.zsh = {
       enable = true;
       autosuggestion.enable = true;
