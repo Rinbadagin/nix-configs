@@ -75,6 +75,8 @@
       zeal
       cockatrice
       transmission_4-qt
+      jdk8
+      jdk24
       # new_pkg
       ];
 }
