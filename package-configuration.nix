@@ -74,6 +74,7 @@
       art
       zeal
       cockatrice
+      transmission
       # new_pkg
       ];
 }
