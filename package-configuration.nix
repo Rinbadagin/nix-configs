@@ -72,6 +72,8 @@
       darktable
       lmms
       art
+      zeal
+      cockatrice
       # new_pkg
       ];
 }
