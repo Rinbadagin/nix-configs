@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 {
   programs.steam.enable = true;
+  services.flatpak.enable = true;
   programs.firefox = {
     enable = true;
     #package = pkgs.librewolf;
