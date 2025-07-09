@@ -50,6 +50,7 @@ in
       shellAliases = {
         editnix = "/etc/nixos/scripts/editnix.zsh";
         tess = "f(){tesseract -l eng $@ | echo}f";
+        note = "mkdir -p ~/notes/ && vim ~/notes/";
       };
       oh-my-zsh = {
         enable = true;
