@@ -81,6 +81,8 @@
       jdk21
       jdk24
       sunshine
+      wine
+      krakatau2
       # new_pkg
       ];
 }
