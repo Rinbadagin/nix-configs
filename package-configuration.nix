@@ -84,6 +84,7 @@
       sunshine
       wine
       krakatau2
+      runelite
       # new_pkg
       ];
 }
