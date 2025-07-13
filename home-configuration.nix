@@ -51,7 +51,7 @@ in
         editnix = "/etc/nixos/scripts/editnix.zsh";
         tess = "f(){tesseract -l eng $@ | echo}f";
         note = "mkdir -p ~/notes/ && vim ~/notes/";
-        proxyme = "sshuttle -r u0_a456@192.168.49.1:8022 0/0";
+        proxyme = "sshuttle -r u0_a456@192.168.239.153:8022 0/0";
       };
       oh-my-zsh = {
         enable = true;
