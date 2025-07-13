@@ -85,6 +85,7 @@
       wine
       krakatau2
       runelite
+      sshuttle
       # new_pkg
       ];
 }
