@@ -5,6 +5,14 @@
   ];
   programs.steam.enable = true;
   services.flatpak.enable = true;
+  services.dictd = {
+    enable = true;
+    DBs = with pkgs.dictdDBs; [
+      wordnet
+      deu2eng
+      eng2deu
+    ];
+  };
   programs.firefox = {
     enable = true;
 #package = pkgs.librewolf;
