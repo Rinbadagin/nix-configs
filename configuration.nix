@@ -35,6 +35,8 @@
 # Select internationalisation properties.
   i18n.defaultLocale = "en_NZ.UTF-8";
 
+  i18n.supportedLocales = [ "all"];
+
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_NZ.UTF-8";
     LC_IDENTIFICATION = "en_NZ.UTF-8";
