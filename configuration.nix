@@ -56,7 +56,7 @@
 
 # Configure keymap in X11
   services.xserver.xkb = {
-    layout = "nz";
+    layout = "nz,de";
     variant = "";
   };
 
