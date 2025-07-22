@@ -98,6 +98,7 @@
       runelite
       sshuttle
       runescape
+      audacity
 # new_pkg
       ];
 }
