@@ -4,6 +4,11 @@
     "openssl-1.1.1w"
   ];
   programs.steam.enable = true;
+  programs.weylus = {
+    enable = true;
+    users = [ "klara" ];
+    openFirewall = true;
+  };
   services.flatpak.enable = true;
   services.dictd = {
     enable = true;
