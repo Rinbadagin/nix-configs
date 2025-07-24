@@ -104,6 +104,7 @@
       sshuttle
       runescape
       audacity
+      activitywatch
 # new_pkg
       ];
 }
