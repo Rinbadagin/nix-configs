@@ -105,6 +105,7 @@
       runescape
       audacity
       activitywatch
-# new_pkg
+      android-tools
+      # new_pkg
       ];
 }
