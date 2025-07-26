@@ -106,6 +106,7 @@
       audacity
       activitywatch
       android-tools
+      testdisk
       # new_pkg
       ];
 }
