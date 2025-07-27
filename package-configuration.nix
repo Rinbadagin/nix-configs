@@ -107,6 +107,7 @@
       activitywatch
       android-tools
       testdisk
+      foremost
       # new_pkg
       ];
 }
