@@ -108,6 +108,7 @@
       android-tools
       testdisk
       foremost
+      libwacom
       # new_pkg
       ];
 }
