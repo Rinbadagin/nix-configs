@@ -109,6 +109,7 @@
       testdisk
       foremost
       libwacom
+      krita
       # new_pkg
       ];
 }
