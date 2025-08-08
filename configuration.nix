@@ -94,9 +94,9 @@
           x                          ▓▓▓▒▓█▓▓▓▓▒▒                    
           x                              ░▓▓▓▓█▓▓░                   
           \""; 
-        in "${pkgs.greetd.tuigreet}/bin/tuigreet --greeting ${art}
-      --time --cmd sway";
-      user = "greeter";                                                  
+        in "${pkgs.greetd.tuigreet}/bin/tuigreet --greeting ${art} --greet-align left
+          --time --cmd sway";
+        user = "greeter";                                                  
       };                                                                   
     };                                                                     
   };
