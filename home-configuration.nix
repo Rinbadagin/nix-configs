@@ -16,6 +16,7 @@ in
       # from: https://slar.se/configuring-touchpad-in-sway.html
       # swaymsg -t get_inputs is handy here
       text = ''
+        include /etc/sway/config
         input "type:touchpad" {
           dwt disabled
           dwtp disabled
