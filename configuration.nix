@@ -74,7 +74,26 @@
     settings = {                                                           
       default_session = {                                                  
         command = 
-          let art = "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY1234567890!@#$%^&*()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()\""; 
+          let art = "\"
+          x  PROPERTY OF KLARA              ▒▒▒                        
+          x  (c) 2025 BLUHAJ CORP         ▒▓▓▒                         
+          x                             ▒▓▓▒▒                      ░░ 
+          x                            ▓▒▓▓▓░                    ░▓▓▒ 
+          x                           ▓▒▓▓▒▓                    ▓▓▓▒  
+          x                        ░▒▓▓▓▓▓▓                   ▓▓▓▒   
+          x                ░░░▒▒▒▒▒▒▒▒▒█▓▓▒░         ▓▒     ▒▓▓▓▒    
+          x     ░▒▒▒▒▒▒▒▓▒▒▒▒▓▒▒▒▒▒▒▓▒▒▓▒▓▒▒▒░      ▓▓░  ░▓▓▓▓▓▓░    
+          x  ▒▒▒▓▒▓▒▒▓▒▒▓▓▓▒▓▓▒▓▒▓▒▓▓▒▓▓▓▓▓▓▒▓▒▓▓▒▒▓▓▓▓▒▓▓▓▒▓█▓▒▓    
+          x░█▓█▒▒▒▓▒▒▓▒▓▓▒▒▓▒▒▓▓▓▒▒▓▓▒▓▓▓▓▓▓▓▓▒▒▒▓▓▓▓▒▓▒▓▓▒▓▓▓█▓▓▓   
+          x░▓▓▒▓▓▓▓▓▓▓▓▓▓▓▒▓▓▓▓▓▓▓▓▓▓▓▒▓▓▒▓▓▓▓▓▓▓▓▒▓▓▒▓▒▒▒░     ▓▓▓  
+          x ▒██▓█▓▓█▓█▓█▓▓▓▓▓▓▓▓▓▓█▓▓▓▒▓▓▓▓▓▓▓▓▒▒▒▓▒▒▓▒░             
+          x  ░░░░▒▒▓▓▓██▓▓▓▓█▓▓█▓▒▓▓▓▓▓▓▓▒▒▒▒▒▓▒▒▒▒▒                 
+          x    ░░░░░░░░░▒▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▒▓▒▒░                       
+          x      ░░░░░▒▒▒▒░░░░░░░░▓▒▓▓▓█▓▓░                          
+          x            ░░░░░░░░░▒▒▒███▓▓▓▓▒▒                         
+          x                          ▓▓▓▒▓█▓▓▓▓▒▒                    
+          x                              ░▓▓▓▓█▓▓░                   
+          \""; 
         in "${pkgs.greetd.tuigreet}/bin/tuigreet --greeting ${art}
       --time --cmd sway";
       user = "greeter";                                                  
