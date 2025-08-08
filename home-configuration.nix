@@ -23,6 +23,10 @@ in
           tap enabled
           tap_button_map lrm
         }
+
+        output eDP-1 {
+          background /etc/nixos/castle.webp fill
+        }
       '';
     };
 
