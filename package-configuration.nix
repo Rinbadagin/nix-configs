@@ -14,8 +14,8 @@
     enable = true;
     DBs = with pkgs.dictdDBs; [
       wordnet
-      deu2eng
-      eng2deu
+        deu2eng
+        eng2deu
     ];
   };
   programs.firefox = {
@@ -110,6 +110,10 @@
       foremost
       libwacom
       krita
-      # new_pkg
+      grim
+      slurp
+      wl-clipboard
+      mako
+# new_pkg
       ];
 }
