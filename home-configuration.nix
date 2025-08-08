@@ -11,6 +11,20 @@ in
   home-manager.users.klara = {
     imports = [ ./modules/nvim.nix ];
     /* The home.stateVersion option does not have a default and must be set */
+
+    home.file."./.config/sway/config" = {
+      # from: https://slar.se/configuring-touchpad-in-sway.html
+      # swaymsg -t get_inputs is handy here
+      text = ''
+        input "type:touchpad" {
+          dwt disabled
+          dwtp disabled
+          tap enabled
+          tap_button_map lrm
+        }
+      '';
+    };
+
     programs.fzf = {
       enable = true;
       enableZshIntegration = true;
