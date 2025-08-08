@@ -73,9 +73,11 @@
     enable = true;                                                         
     settings = {                                                           
       default_session = {                                                  
-        command = let art = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY1234567890!@#$%^&*()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()"; in "${pkgs.greetd.tuigreet}/bin/tuigreet --greeting ${art}
-        --time --cmd sway";
-        user = "greeter";                                                  
+        command = 
+          let art = "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY1234567890!@#$%^&*()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()\""; 
+        in "${pkgs.greetd.tuigreet}/bin/tuigreet --greeting ${art}
+      --time --cmd sway";
+      user = "greeter";                                                  
       };                                                                   
     };                                                                     
   };
