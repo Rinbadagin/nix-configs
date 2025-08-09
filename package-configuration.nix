@@ -115,6 +115,7 @@
       wl-clipboard
       mako
       oculante
+      swayosd
 # new_pkg
       ];
 }
