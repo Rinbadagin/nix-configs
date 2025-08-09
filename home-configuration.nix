@@ -28,7 +28,7 @@ in
           background /etc/nixos/backgrounds/castle.png fill
         }
 
-        opacity set 0.9
+        set $opacity 0.9
         gaps inner 5
         shadows enable
         blur enable
