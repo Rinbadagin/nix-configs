@@ -2,7 +2,7 @@
 
 set -e
 
-if [![ -z "$1"]] then
+if ! [ -z "$1"]; then
   if [[ "$1" == "nocommit" ]]; then
     # nocommit path goes here
     sudo -- sh -c "vim /etc/nixos/"
@@ -12,8 +12,8 @@ if [![ -z "$1"]] then
   else
     echo "optional nocommit flag, else fine"
     exit 1
-  end
-end
+  fi
+fi
 
 # regular path here
 sudo -- sh -c "vim /etc/nixos/"
