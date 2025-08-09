@@ -33,6 +33,18 @@ in
         shadows enable
         blur enable
         corner_radius 8
+
+        exec swayosd-server
+
+        # Volume raise with max value
+        bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise --max-volume 120
+        # Volume lower with max value
+        bindsym XF86AudioLowerVolume exec swayosd-client --output-volume lower --max-volume 120
+				
+				# Volume raise with max value
+				bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise --max-volume 120
+				# Volume lower with max value
+				bindsym XF86AudioLowerVolume exec swayosd-client --output-volume lower --max-volume 120
       '';
     };
 
