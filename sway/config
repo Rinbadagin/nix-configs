@@ -29,7 +29,7 @@ bar {
     colors {
         statusline #ffffff
         background #302020cc
-        inactive_workspace #32323200 #302020cc #5c5c5c
+        inactive_workspace #323232cc #302020cc #5c5c5caa
     }
 }
 
