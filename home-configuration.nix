@@ -16,35 +16,7 @@ in
       # from: https://slar.se/configuring-touchpad-in-sway.html
       # swaymsg -t get_inputs is handy here
       text = ''
-        include /etc/sway/config
-        input "type:touchpad" {
-          dwt disabled
-          dwtp disabled
-          tap enabled
-          tap_button_map lrm
-        }
-
-        output eDP-1 {
-          background /etc/nixos/backgrounds/castle.png fill
-        }
-
-        set $opacity 0.9
-        gaps inner 5
-        shadows enable
-        blur enable
-        corner_radius 8
-
-        exec swayosd-server
-
-        # Volume raise with max value
-        bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise --max-volume 120
-        # Volume lower with max value
-        bindsym XF86AudioLowerVolume exec swayosd-client --output-volume lower --max-volume 120
-				
-				# Volume raise with max value
-				bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise --max-volume 120
-				# Volume lower with max value
-				bindsym XF86AudioLowerVolume exec swayosd-client --output-volume lower --max-volume 120
+        include /etc/nixos/sway/config
       '';
     };
 
