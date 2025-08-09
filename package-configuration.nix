@@ -114,6 +114,7 @@
       oculante
       swayosd
       upower
+      networkmanager
 # new_pkg
       ];
 }
