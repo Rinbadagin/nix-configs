@@ -93,9 +93,6 @@
       cockatrice
       transmission_4-qt
       jdk8
-      jdk11
-      jdk17
-      jdk21
       jdk24
       sunshine
       wine
@@ -116,6 +113,7 @@
       mako
       oculante
       swayosd
+      upower
 # new_pkg
       ];
 }

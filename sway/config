@@ -16,6 +16,24 @@ shadows enable
 blur enable
 corner_radius 8
 
+client.unfocused #000000 #302020bb #ffffff
+client.focused #000000 ##705020bb #ffffff
+
+bar {
+    position top
+
+    # When the status_command prints a new line to stdout, swaybar updates.
+    # The default just shows the current date and time.
+    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+
+    colors {
+        statusline #ffffff
+        background #302020cc
+        inactive_workspace #32323200 #302020cc #5c5c5c
+    }
+}
+
+
 exec swayosd-server
 
 # Volume raise with max value
