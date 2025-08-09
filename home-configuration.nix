@@ -25,7 +25,7 @@ in
         }
 
         output eDP-1 {
-          background /etc/nixos/backgrounds/castle.webp fill
+          background /etc/nixos/backgrounds/castle.png fill
         }
       '';
     };
