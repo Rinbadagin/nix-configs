@@ -115,6 +115,7 @@
       swayosd
       upower
       networkmanager
+      mate.engrampa
 # new_pkg
       ];
 }
