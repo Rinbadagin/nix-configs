@@ -115,7 +115,7 @@
       swayosd
       upower
       networkmanager
-      mate.engrampa
+      kdePackages.ark
 # new_pkg
       ];
 }
