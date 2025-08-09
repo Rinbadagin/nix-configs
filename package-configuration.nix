@@ -114,6 +114,7 @@
       slurp
       wl-clipboard
       mako
+      oculante
 # new_pkg
       ];
 }
