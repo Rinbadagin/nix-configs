@@ -116,6 +116,7 @@
       upower
       networkmanager
       kdePackages.ark
+      inkscape
 # new_pkg
       ];
 }
