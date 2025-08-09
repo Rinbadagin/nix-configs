@@ -23,7 +23,7 @@ bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise --max-vol
 # Volume lower with max value
 bindsym XF86AudioLowerVolume exec swayosd-client --output-volume lower --max-volume 120
 
-# Volume raise with max value
-bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise --max-volume 120
-# Volume lower with max value
-bindsym XF86AudioLowerVolume exec swayosd-client --output-volume lower --max-volume 120
+# Brightness raise with custom value('+' sign needed)
+bindsym XF86MonBrightnessUp  exec swayosd-client --brightness +10
+# Brightness lower with custom value('-' sign needed)
+bindsym XF86MonBrightnessDown exec swayosd-client --brightness -10
