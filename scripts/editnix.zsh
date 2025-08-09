@@ -20,6 +20,7 @@ then
     sudo -- sh -c "nixos-rebuild switch"
     (cd /etc/nixos/ && git add . && git commit -m "$msg" && git push)
     echo "Commited $msg"
+    exit 0
   else
     echo "optional nocommit flag, else fine"
     exit 1
