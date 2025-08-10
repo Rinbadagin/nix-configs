@@ -10,7 +10,12 @@
       nnoremap <leader>fg <cmd>Telescope live_grep<cr>
       nnoremap <leader>fb <cmd>Telescope buffers<cr>
       nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-      '';
+
+      require('neo-tree').setup({
+          use_libuv_file_watcher=true
+          follow_current_file.enabled=true
+          })
+    '';
     vimAlias = true;
     viAlias = true;
   };
