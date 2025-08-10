@@ -117,6 +117,7 @@
       networkmanager
       kdePackages.ark
       inkscape
+      libuv
 # new_pkg
       ];
 }

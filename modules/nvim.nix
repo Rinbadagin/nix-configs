@@ -12,12 +12,12 @@
           nnoremap <leader>fb <cmd>Telescope buffers<cr>
           nnoremap <leader>fh <cmd>Telescope help_tags<cr>
       ]])
-	neotreeConfig = {
-          use_libuv_file_watcher = true;
-	  follow_current_file = { enabled = true; };
-	}
-      require('neo-tree').setup(neotreeConfig)
-    '';
+      neotreeConfig = {
+        use_libuv_file_watcher = true;
+        follow_current_file = { enabled = true; };
+      }
+    require('neo-tree').setup(neotreeConfig)
+      '';
     vimAlias = true;
     viAlias = true;
   };
