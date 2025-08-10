@@ -11,11 +11,13 @@
       nnoremap <leader>fb <cmd>Telescope buffers<cr>
       nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
+      lua << EOF
       require('neo-tree').setup({
           use_libuv_file_watcher=true
           follow_current_file.enabled=true
           })
-    '';
+    EOF
+      '';
     vimAlias = true;
     viAlias = true;
   };
