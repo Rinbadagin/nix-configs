@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   programs.neovim = {
     enable = true;
-    plugins = with pkgs.vimPlugins; [ vim-airline neo-tree-nvim lspsaga-nvim telescope-fzf-native-nvim ];
+    plugins = with pkgs.vimPlugins; [ vim-airline neo-tree-nvim lspsaga-nvim telescope-fzf-native-nvim snacks-nvim ];
     extraLuaConfig = ''
       vim.cmd([[
           set autoindent expandtab tabstop=2 shiftwidth=2"
