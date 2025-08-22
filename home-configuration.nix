@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, security, ... }:
 let
 home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
 in
@@ -6,6 +6,7 @@ in
   imports = [
     (import "${home-manager}/nixos")
       ./modules/oneko_start.nix
+      ./modules/tlp-stat_wrapper.nix
   ];
   home-manager.useGlobalPkgs = true;
   home-manager.users.klara = {
@@ -13,10 +14,17 @@ in
     /* The home.stateVersion option does not have a default and must be set */
 
     home.file."./.config/sway/config" = {
-      # from: https://slar.se/configuring-touchpad-in-sway.html
-      # swaymsg -t get_inputs is handy here
+# from: https://slar.se/configuring-touchpad-in-sway.html
+# swaymsg -t get_inputs is handy here
       text = ''
         include /etc/nixos/sway/config
+
+
+# When the status_command prints a new line to stdout, swaybar updates.
+# The default just shows the current date and time.
+        bar {
+          status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+        }
       '';
     };
 

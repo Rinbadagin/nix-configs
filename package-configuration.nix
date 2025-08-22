@@ -118,6 +118,7 @@
       kdePackages.ark
       inkscape
       libuv
+      wl-clipboard
 # new_pkg
       ];
 }

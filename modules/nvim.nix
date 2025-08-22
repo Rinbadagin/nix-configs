@@ -13,8 +13,8 @@
           nnoremap <leader>fh <cmd>Telescope help_tags<cr>
       ]])
       neotreeConfig = {
-        use_libuv_file_watcher = true;
-        follow_current_file = { enabled = true; };
+        use_libuv_file_watcher = true,
+        follow_current_file = { enabled = true },
         window = {
           mappings = {
             ["P"] = {
