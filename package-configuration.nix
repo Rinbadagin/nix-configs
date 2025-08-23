@@ -10,6 +10,7 @@
     openFirewall = true;
   };
   services.flatpak.enable = true;
+  services.blueman.enable = true;
   services.dictd = {
     enable = true;
     DBs = with pkgs.dictdDBs; [
@@ -119,7 +120,6 @@
       inkscape
       libuv
       wl-clipboard
-      blueman
 # new_pkg
       ];
 }
