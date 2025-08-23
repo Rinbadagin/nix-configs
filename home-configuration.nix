@@ -40,6 +40,7 @@ in
       enable = true;
       extraConfig = ''
         background_opacity 0.7
+        enable_audio_bell no
         '';
     };
     programs.git = {
