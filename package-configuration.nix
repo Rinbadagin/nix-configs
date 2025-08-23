@@ -119,6 +119,7 @@
       inkscape
       libuv
       wl-clipboard
+      blueman
 # new_pkg
       ];
 }
