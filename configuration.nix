@@ -12,6 +12,7 @@
       ./package-configuration.nix
       ./user-configuration.nix
       ./home-configuration.nix
+      ./modules/smb-client.nix
       ./boot/plymouth.nix
     ];
 
@@ -96,7 +97,7 @@
           x                              ░▓▓▓▓█▓▓░                   
           \""; 
         in "${pkgs.greetd.tuigreet}/bin/tuigreet --greeting ${art} --greet-align left
-          --time --cmd sway";
+          --time --cmd 'dbus-run-session sway'";
         user = "greeter";                                                  
       };                                                                   
     };                                                                     

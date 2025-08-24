@@ -1,5 +1,8 @@
-{
+{pkgs, ...}: {
   # For mount.cifs, required unless domain name resolution is not needed.
+  services.gvfs = {
+    enable = true;
+  };
   environment.systemPackages = [ pkgs.cifs-utils ];
   fileSystems."/mnt/share" = {
     device = "//the-nuc/share-name";
