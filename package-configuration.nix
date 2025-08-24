@@ -122,6 +122,7 @@
       wl-clipboard
       nmap
       pcmanfm
+      rclone
 # new_pkg
       ];
 }

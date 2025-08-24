@@ -70,6 +70,7 @@ in
         tess = "f(){tesseract -l eng $@ | echo}f";
         note = "mkdir -p ~/notes/ && vim ~/notes/";
         proxyme = "sshuttle -r u0_a456@192.168.239.153:8022 0/0";
+        nucdav = "rclone mount --vfs-cache-mode writes --dir-cache-time 5s thenuc-dav: mp";
       };
       oh-my-zsh = {
         enable = true;
