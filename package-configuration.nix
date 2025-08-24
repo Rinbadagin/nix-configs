@@ -123,6 +123,7 @@
       nmap
       pcmanfm
       rclone
+      signal-desktop
 # new_pkg
       ];
 }

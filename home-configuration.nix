@@ -28,6 +28,16 @@ in
       '';
     };
 
+    home.file."./.config/rclone/rclone.conf" = {
+      text = ''
+        [thenuc-dav]
+        type = webdav
+          pacer_min_sleep = 0.01ms
+          url = http://the-nuc:3923
+          vendor = owncloud
+          '';
+    };
+
     programs.fzf = {
       enable = true;
       enableZshIntegration = true;
@@ -70,7 +80,7 @@ in
         tess = "f(){tesseract -l eng $@ | echo}f";
         note = "mkdir -p ~/notes/ && vim ~/notes/";
         proxyme = "sshuttle -r u0_a456@192.168.239.153:8022 0/0";
-        nucdav = "rclone mount --vfs-cache-mode writes --dir-cache-time 5s thenuc-dav: mp";
+        nucdav = "rclone mount --vfs-cache-mode writes --dir-cache-time 5s thenuc-dav: ~/nuc";
       };
       oh-my-zsh = {
         enable = true;
