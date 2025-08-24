@@ -120,6 +120,7 @@
       inkscape
       libuv
       wl-clipboard
+      nmap
 # new_pkg
       ];
 }
