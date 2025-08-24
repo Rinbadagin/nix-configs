@@ -121,6 +121,7 @@
       libuv
       wl-clipboard
       nmap
+      pcmanfm
 # new_pkg
       ];
 }
