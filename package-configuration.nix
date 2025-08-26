@@ -124,6 +124,7 @@
       pcmanfm
       rclone
       signal-desktop
+      jetbrains.idea-community
 # new_pkg
       ];
 }
