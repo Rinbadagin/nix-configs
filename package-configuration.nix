@@ -125,6 +125,7 @@
       rclone
       signal-desktop
       jetbrains.idea-community
+      obs-studio
 # new_pkg
       ];
 }
