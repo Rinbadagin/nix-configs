@@ -126,6 +126,7 @@
       signal-desktop
       jetbrains.idea-community
       obs-studio
+      pavucontrol
 # new_pkg
       ];
 }
