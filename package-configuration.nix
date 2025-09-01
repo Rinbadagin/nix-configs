@@ -127,6 +127,7 @@
       jetbrains.idea-community
       obs-studio
       pavucontrol
+      texstudio
 # new_pkg
       ];
 }
