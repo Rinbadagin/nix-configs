@@ -128,6 +128,7 @@
       obs-studio
       pavucontrol
       texstudio
+      obs-studio
 # new_pkg
       ];
 }
