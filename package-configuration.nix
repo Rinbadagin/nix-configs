@@ -129,6 +129,7 @@
       pavucontrol
       texstudio
       obs-studio
+      qgis
 # new_pkg
       ];
 }
