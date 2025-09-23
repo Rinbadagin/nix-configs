@@ -130,6 +130,7 @@
       texstudio
       obs-studio
       qgis
+      (flameshot.override { enableWlrSupport = true; })
 # new_pkg
       ];
 }
