@@ -6,7 +6,7 @@ in
   imports = [
     (import "${home-manager}/nixos")
       ./modules/oneko_start.nix
-      ./modules/tlp-stat_wrapper.nix
+      # ./modules/tlp-stat_wrapper.nix
   ];
   home-manager.useGlobalPkgs = true;
   home-manager.users.klara = {
