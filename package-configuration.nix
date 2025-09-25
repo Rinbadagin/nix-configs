@@ -131,6 +131,7 @@
       obs-studio
       qgis
       (flameshot.override { enableWlrSupport = true; })
+      kdePackages.kdenlive
 # new_pkg
       ];
 }
