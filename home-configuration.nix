@@ -82,6 +82,7 @@ in
         proxyme = "sshuttle -r u0_a456@192.168.239.153:8022 0/0";
         nucdav = "rclone mount --vfs-cache-mode writes --dir-cache-time 5s thenuc-dav: ~/nuc";
         vimc = "firefox https://scthornton.github.io/cheatsheets/vim_cheatsheet/";
+        neotreec = "firefox https://deepwiki.com/nvim-neo-tree/neo-tree.nvim/3.2-key-mappings";
       };
       oh-my-zsh = {
         enable = true;
