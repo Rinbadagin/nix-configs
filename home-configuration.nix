@@ -45,6 +45,7 @@ in
     programs.tmux = {
       enable = true;
       shell = "${pkgs.zsh}/bin/zsh";
+      prefix = "^a";
     };
     programs.kitty = {
       enable = true;
