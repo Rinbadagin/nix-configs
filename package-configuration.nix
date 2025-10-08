@@ -132,6 +132,7 @@
       qgis
       (flameshot.override { enableWlrSupport = true; })
       kdePackages.kdenlive
+      vscodium
 # new_pkg
       ];
 }
