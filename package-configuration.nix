@@ -133,6 +133,7 @@
       (flameshot.override { enableWlrSupport = true; })
       kdePackages.kdenlive
       vscodium
+      wdisplays
 # new_pkg
       ];
 }
