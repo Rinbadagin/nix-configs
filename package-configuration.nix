@@ -48,6 +48,11 @@
 
   services.tailscale.enable = true; 
 
+  services.logind.extraConfig = ''
+# don’t shutdown when power button is short-pressed
+    HandlePowerKey=ignore
+    '';
+
 # List packages installed in system profile. To search, run:
 # $ nix search wget
   environment.systemPackages = with pkgs; [
