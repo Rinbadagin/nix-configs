@@ -139,6 +139,7 @@
       kdePackages.kdenlive
       vscodium
       wdisplays
+      zoom-us
 # new_pkg
       ];
 }
