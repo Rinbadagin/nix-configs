@@ -76,6 +76,8 @@ in
       history.size = 1000000;
       initContent = lib.mkOrder 1500 ''
         source /etc/nixos/scripts/runtmux.zsh
+
+        echo "Welcome to terminal-land! Here are your aliases for today:\n\teditnix, tess, note, proxyme, nucdav, vimc, neotreec, getweather.\n:3"
         '';
       shellAliases = {
         editnix = "/etc/nixos/scripts/editnix.zsh";
