@@ -4,4 +4,4 @@ echo "^a (start of line), ^e (end of line) alt + b (back a word) alt + f (forwar
 echo "(vim) w, b, e, ge (word navigation)"
 echo "remember to use ^r in zsh and zeal! it's so handy!"
 
-cat /etc/nixos/TODO.md
+cat $HOME/goals.txt
