@@ -12,14 +12,6 @@ in
     imports = [ ./modules/nvim.nix ];
     /* The home.stateVersion option does not have a default and must be set */
 
-    home.file.".config/sway/config" = {
-# from: https://slar.se/configuring-touchpad-in-sway.html
-# swaymsg -t get_inputs is handy here
-      text = ''
-        include /etc/nixos/sway/config
-      '';
-    };
-
     home.file.".config/rclone/rclone.conf" = {
       text = ''
         [thenuc-dav]
@@ -30,14 +22,12 @@ in
           '';
     };
 
-    home.file.".config/personal-scripts/status.sh" = {
+    home.file.".config/sway/config" = {
+# from: https://slar.se/configuring-touchpad-in-sway.html
+# swaymsg -t get_inputs is handy here
       text = ''
-        #!/run/current-system/sw/bin/env bash
-        bat=$(sudo tlp-stat -b | grep "Charge" | sed -rn "s/.*([0-9]{2}).*/\1/p")
-        state=$(sudo tlp-stat -b | grep "/status" | sed -re "s/.*\s+([a-zA-Z]+)/\1/")
-        echo $bat% $state $(date +'%Y-%m-%d %X')
-      '';
-      executable = true;
+        include /etc/nixos/sway/config
+        '';
     };
 
     programs.fzf = {
@@ -78,7 +68,7 @@ in
       initContent = lib.mkOrder 1500 ''
         source /etc/nixos/scripts/runtmux.zsh
 
-        echo "Welcome to terminal-land! Here are your aliases for today:\n\teditnix, tess, note, proxyme, nucdav, vimc, neotreec, getweather.\n:3"
+        source /etc/nixos/scripts/zsh-motd.zsh
         '';
       shellAliases = {
         editnix = "/etc/nixos/scripts/editnix.zsh";
