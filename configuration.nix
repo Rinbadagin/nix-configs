@@ -61,9 +61,8 @@
   services.xserver.xkb = {
     layout = "nz,de";
     variant = "";
+    options = "caps:ctrl_modifier";
   };
-
-  services.xserver.xkbOptions = "caps:ctrl_modifier";
 
   services.gnome.gnome-keyring.enable = true;
 
