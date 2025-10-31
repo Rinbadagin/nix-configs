@@ -34,7 +34,8 @@ in
       text = ''
         #!/run/current-system/sw/bin/env bash
         bat=$(sudo tlp-stat -b | grep "Charge" | sed -rn "s/.*([0-9]{2}).*/\1/p")
-        echo $bat% $(date +'%Y-%m-%d %X')
+        state=$(sudo tlp-stat -b | grep "/status" | sed -re "s/.*\s+([a-zA-Z]+)/\1/")
+        echo $bat% $state $(date +'%Y-%m-%d %X')
       '';
       executable = true;
     };
