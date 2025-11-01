@@ -72,6 +72,8 @@
     wrapperFeatures.gtk = true;
   };
 
+  virtualisation.docker.enable = true;
+
   services.greetd = {                                                      
     enable = true;                                                         
     settings = {                                                           
