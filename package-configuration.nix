@@ -118,6 +118,7 @@
       vscodium
       wdisplays
       zoom-us
+      compose2nix
 # new_pkg
       ];
 }
