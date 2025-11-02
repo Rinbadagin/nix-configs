@@ -119,6 +119,7 @@
       wdisplays
       zoom-us
       compose2nix
+      blender
 # new_pkg
       ];
 }
