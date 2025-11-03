@@ -19,6 +19,14 @@
         eng2deu
     ];
   };
+
+
+  # from https://raw.githubusercontent.com/cm-b2g/B2G/1230463/tools/51-android.rules
+  # and https://sites.google.com/view/bananahackers/development/adb?authuser=0
+  services.udev.extraRules = ''
+  SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", MODE="0664", GROUP="plugdev"
+  '';
+
   programs.firefox = {
     enable = true;
   };
