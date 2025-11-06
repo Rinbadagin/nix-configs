@@ -80,6 +80,7 @@ in
         neotreec = "firefox https://deepwiki.com/nvim-neo-tree/neo-tree.nvim/3.2-key-mappings";
         getweather = "firefox https://www.metservice.com/maps-radar/rain/forecast/3-days";
         swayc = "firefox https://wiki.garudalinux.org/en/sway-cheatsheet";
+        ncatl = "ncat -lnvp";
       };
       oh-my-zsh = {
         enable = true;
