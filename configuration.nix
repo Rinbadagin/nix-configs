@@ -64,7 +64,7 @@
     options = "caps:ctrl_modifier";
   };
 
-  services.dnsmasq.enable = true;
+  # services.dnsmasq.enable = true;
 
   services.gnome.gnome-keyring.enable = true;
 
