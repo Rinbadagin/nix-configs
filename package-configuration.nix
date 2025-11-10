@@ -128,6 +128,7 @@
       zoom-us
       compose2nix
       blender
+      nixos-generators
 # new_pkg
       ];
 }
