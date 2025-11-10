@@ -129,6 +129,7 @@
       compose2nix
       blender
       nixos-generators
+      obsidian
 # new_pkg
       ];
 }
