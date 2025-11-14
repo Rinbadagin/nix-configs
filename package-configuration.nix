@@ -130,6 +130,9 @@
       blender
       nixos-generators
       obsidian
+      dive
+      podman-tui
+      podman-compose
 # new_pkg
       ];
 }
