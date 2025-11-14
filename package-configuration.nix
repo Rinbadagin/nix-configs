@@ -131,8 +131,9 @@
       nixos-generators
       obsidian
       dive
-      podman-tui
-      podman-compose
+      #podman-tui
+      docker-compose
+      #podman-compose
 # new_pkg
       ];
 }
