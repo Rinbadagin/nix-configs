@@ -63,7 +63,7 @@
       anki
       ardour
       gnome-tweaks
-      kicad
+      # kicad
       kdePackages.kdeconnect-kde
       devenv
       ripgrep
@@ -77,7 +77,7 @@
       gnomeExtensions.desktop-clock
       gnomeExtensions.desktop-icons-ng-ding
       lutris
-      retroarch-full
+      # retroarch-full
       darktable
       lmms
       art
