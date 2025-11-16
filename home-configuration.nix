@@ -81,7 +81,6 @@ in
         getweather = "firefox https://www.metservice.com/maps-radar/rain/forecast/3-days";
         swayc = "firefox https://wiki.garudalinux.org/en/sway-cheatsheet";
         ncatl = "ncat -lnvp";
-        showsecret = "${config.age.secrets."testing-secret.age".path}";
       };
       oh-my-zsh = {
         enable = true;

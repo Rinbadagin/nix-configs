@@ -32,7 +32,12 @@
   };
   programs.zsh.enable = true;
 
-  services.tailscale.enable = true; 
+  services.tailscale = {
+    enable = true;
+    authKeyFile = config.age.secrets."tailscale-authkey.age".path;
+    extraUpFlags = [ "--login-server" "https://hs.fem.nz/" ];
+  };
+
 
   services.logind.extraConfig = ''
 # don’t shutdown when power button is short-pressed

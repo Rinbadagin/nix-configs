@@ -12,5 +12,5 @@ let
   ];
 in
 {
-  "testing-secret.age".publicKeys = keys;
+  "tailscale-authkey.age".publicKeys = keys;
 }
