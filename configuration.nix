@@ -156,6 +156,26 @@
 # Open ports in the firewall.
   networking.firewall.allowedTCPPorts = [ 43594 1701 8000 8765 ];
   networking.firewall.allowedUDPPorts = [ 43594 9001 8000 8765 ];
+
+  age.secrets = let
+    secrets = import ./secrets/secrets.nix;
+  in
+    builtins.mapAttrs (name: attrs: {
+      file = ./secrets/${name};
+      owner = attrs.owner or "root";
+      group = attrs.group or "root";
+      mode = attrs.mode or "0400";
+    }) secrets;
+
+  services.openssh = {
+    enable = true;
+    settings = {
+      PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
+      PermitRootLogin = "no";
+      AllowUsers = [ "klara" ];
+    };
+  };
 # Or disable the firewall altogether.
 # networking.firewall.enable = false;
 
