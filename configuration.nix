@@ -176,6 +176,8 @@
       AllowUsers = [ "klara" ];
     };
   };
+
+  boot.binfmt.emulatedSystems = ["aarch64-linux"];
 # Or disable the firewall altogether.
 # networking.firewall.enable = false;
 
