@@ -136,7 +136,6 @@
       nixos-generators
       obsidian
       dive
-      k3s
       docker-compose
 # new_pkg
       (callPackage "${builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz"}/pkgs/agenix.nix" {})
