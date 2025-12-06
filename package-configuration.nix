@@ -95,6 +95,7 @@
       wine
       krakatau2
       runelite
+      bolt-launcher
       sshuttle
       runescape
       audacity
