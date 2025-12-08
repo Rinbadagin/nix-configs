@@ -44,6 +44,8 @@
     HandlePowerKey=ignore
     '';
 
+  programs.kdeconnect = { enable = true; };
+
 # List packages installed in system profile. To search, run:
 # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -69,7 +71,6 @@
       ardour
       gnome-tweaks
       # kicad
-      kdePackages.kdeconnect-kde
       devenv
       ripgrep
       libremines
