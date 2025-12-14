@@ -139,7 +139,7 @@
       obsidian
       dive
       docker-compose
-      moonlight
+      moonlight-qt
 # new_pkg
       (callPackage "${builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz"}/pkgs/agenix.nix" {})
       ];
