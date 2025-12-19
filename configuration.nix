@@ -33,18 +33,18 @@
     networking.networkmanager.enable = true;
     networking.nameservers = [ "1.1.1.1" "9.9.9.9" ];
 
-    #networking = {
-    #  interfaces.enp1s0 = {
-    #  ipv6.addresses = [{
-    #    address = "2a01:4f8:1c1b:16d0::1";
-    #    prefixLength = 64;
-    #  }];
-    #  ipv4.addresses = [{
-    #    address = "192.0.2.2";
-    #    prefixLength = 24;
-    #  }];
-    #  };
-    #};
+    networking = {
+      interfaces.enp1s0 = {
+      ipv6.addresses = [{
+        address = "2a01:4f8:1c1b:16d0::1";
+        prefixLength = 64;
+      }];
+      ipv4.addresses = [{
+        address = "192.0.2.2";
+        prefixLength = 24;
+      }];
+      };
+    };
 
 # Set your time zone.
   time.timeZone = "Pacific/Auckland";
