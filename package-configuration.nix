@@ -140,6 +140,7 @@
       dive
       docker-compose
       moonlight-qt
+      unzip
 # new_pkg
       (callPackage "${builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz"}/pkgs/agenix.nix" {})
       ];
