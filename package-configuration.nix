@@ -10,7 +10,7 @@
     openFirewall = true;
   };
   services.flatpak.enable = true;
-  services.blueman.enable = false;
+  services.blueman.enable = true;
   services.dictd = {
     enable = true;
     DBs = with pkgs.dictdDBs; [
