@@ -70,6 +70,8 @@
   services.xserver.enable = true;
 
   services.xserver.wacom.enable = true;
+  # services.syncthing.user = "klara";
+  services.syncthing.enable = true;
 
 # Enable the GNOME Desktop Environment
 
