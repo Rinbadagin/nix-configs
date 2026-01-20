@@ -1,8 +1,78 @@
-{ pkgs, ... }: {
-  programs.neovim = {
-    enable = true;
-    plugins = with pkgs.vimPlugins; [ vim-airline neo-tree-nvim lspsaga-nvim telescope-fzf-native-nvim snacks-nvim ];
-    extraLuaConfig = ''
+{ pkgs, lib, ... }: 
+let
+  nixvim = import (builtins.fetchGit {
+    url = "https://github.com/nix-community/nixvim";
+    # If you are not running an unstable channel of nixpkgs, select the corresponding branch of Nixvim.
+    ref = "nixos-25.11";
+  });
+in
+{
+  imports = [
+    # For NixOS
+    nixvim.nixosModules.nixvim
+  ]; 
+
+  programs.nixvim = {
+  plugins = {
+      comment.enable = true;
+      lualine.enable = true;
+      web-devicons.enable = true;
+
+      cmp = {
+        enable = true;
+        settings = {
+          sources = [
+            { name = "nvim_lsp"; }
+            { name = "luasnip"; }
+            { name = "path"; }
+            { name = "buffer"; }
+          ];
+        };
+      };
+
+      nvim-tree = {
+        enable = true;
+        openOnSetup = true;
+        settings = {
+          git.enable = true;
+          sort_by = "case_sensitive";
+          auto_reload_on_write = true;
+          disable_netrw = true;
+        };
+      };
+
+      telescope = {
+        enable = true;
+        settings.defaults.mappings.i = {
+          "<C-j>".__raw = "require('telescope.actions').move_selection_next";
+          "<C-k>".__raw = "require('telescope.actions').move_selection_previous";
+        };
+      };
+
+      treesitter = {
+        enable = true;
+        nixvimInjections = true;
+        settings = {
+          highlight.enable = true;
+          indent.enable = true;
+        };
+      };
+
+      lsp = {
+        enable = true;
+        servers = {
+          nixd.enable = true;
+          rust_analyzer = {
+            enable = true;
+            installCargo = false;
+            installRustc = false;
+            settings.check.command = "clippy";
+          };
+          clangd.enable = true;
+        };
+      };
+  };
+    extraConfigLua = ''
       vim.cmd([[
           set autoindent expandtab tabstop=2 shiftwidth=2"
           set number relativenumber
@@ -12,26 +82,7 @@
           nnoremap <leader>fb <cmd>Telescope buffers<cr>
           nnoremap <leader>fh <cmd>Telescope help_tags<cr>
       ]])
-      neotreeConfig = {
-        use_libuv_file_watcher = true,
-        follow_current_file = { enabled = true },
-        window = {
-          mappings = {
-            ["P"] = {
-              "toggle_preview",
-              config = {
-                use_float = false,
-                -- use_image_nvim = true,
-                use_snacks_image = true,
-                title = 'Neo-tree Preview',
-              },
-            },
-          }
-        }
-      }
-    require('neo-tree').setup(neotreeConfig)
-      '';
-    vimAlias = true;
-    viAlias = true;
+    '';
   };
-               }
+  }
+               
