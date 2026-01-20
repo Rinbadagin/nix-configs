@@ -8,8 +8,8 @@ let
 in
 {
   imports = [
-    # For NixOS
-    nixvim.nixosModules.nixvim
+    # For Home Manager
+    nixvim.homeModules.nixvim
   ]; 
 
   programs.nixvim = {

@@ -15,7 +15,6 @@
       ./modules/smb-client.nix
       ./boot/plymouth.nix
      "${builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz"}/modules/age.nix"
-     ./modules/nvim.nix
     ];
 
 # Bootloader.
