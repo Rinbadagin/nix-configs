@@ -3,7 +3,7 @@ let
   nixvim = import (builtins.fetchGit {
     url = "https://github.com/nix-community/nixvim";
     # If you are not running an unstable channel of nixpkgs, select the corresponding branch of Nixvim.
-    ref = "nixos-25.11";
+    ref = "nixos-25.05";
   });
 in
 {
@@ -30,15 +30,15 @@ in
         };
       };
 
-      nvim-tree = {
+      neo-tree = {
         enable = true;
-        openOnSetup = true;
-        settings = {
-          git.enable = true;
-          sort_by = "case_sensitive";
-          auto_reload_on_write = true;
-          disable_netrw = true;
-        };
+        #autoLoad = true;
+        #settings = {
+        #  git.enable = true;
+        #  sort_by = "case_sensitive";
+        #  auto_reload_on_write = true;
+        #  disable_netrw = true;
+        #};
       };
 
       telescope = {
