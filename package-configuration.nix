@@ -39,10 +39,10 @@
   };
 
 
-  services.logind.extraConfig = ''
+  services.logind.settings.Login = {
+    HandlePowerKey = "ignore";
+  };
 # don’t shutdown when power button is short-pressed
-    HandlePowerKey=ignore
-    '';
 
   programs.kdeconnect = { enable = true; };
 
@@ -56,7 +56,7 @@
       vulkan-tools
       intel-gpu-tools
       git
-      deadbeef
+      # deadbeef
       xorg.xbacklight
       prismlauncher
       file
@@ -91,7 +91,7 @@
       cockatrice
       transmission_4-qt
       jdk8
-      jdk24
+      jdk25
       sunshine
       wine
       krakatau2
