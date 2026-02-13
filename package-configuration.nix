@@ -96,7 +96,7 @@
       wine
       krakatau2
       runelite
-      bolt-launcher
+      (bolt-launcher.override { enableRS3 = true; })
       sshuttle
       runescape
       audacity
