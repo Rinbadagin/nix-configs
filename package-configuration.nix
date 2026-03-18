@@ -28,6 +28,7 @@
   SUBSYSTEM=="usb", ATTR{idVendor}=="1fc9", MODE="0664", GROUP="plugdev"
   SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", MODE="0664", GROUP="plugdev"
   SUBSYSTEM=="usb", ATTR{idVendor}=="15a2", MODE="0664", GROUP="plugdev"
+  SUBSYSTEM=="usb", ATTR{idVendor}=="8137", MODE="0664", GROUP="plugdev"
   SUBSYSTEM=="usb-serial", ATTR{serial}=="0", MODE="0664", GROUP="plugdev"
   '';
 
