@@ -56,7 +56,10 @@
   environment.systemPackages = with pkgs; [
     wget
       tmux
-      gimp
+      gimp-with-plugins
+      gimpPlugins.resynthesizer
+      gimpPlugins.gmic
+      nufraw
       libreoffice
       vulkan-tools
       intel-gpu-tools
