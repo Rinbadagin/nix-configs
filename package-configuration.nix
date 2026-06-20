@@ -146,7 +146,7 @@
       nixos-generators
       obsidian
       dive
-      docker-compose
+      # docker-compose
       moonlight-qt
       unzip
       ncdu
@@ -158,6 +158,8 @@
       rtl_433
       sdrpp
       multimon-ng
+      #vim
+      #strawberry-qt
 # new_pkg
       (callPackage "${builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz"}/pkgs/agenix.nix" {})
       ];
