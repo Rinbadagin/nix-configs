@@ -9,6 +9,7 @@
     users = [ "klara" ];
     openFirewall = true;
   };
+  programs.gnupg.agent.enable = true;
   services.flatpak.enable = true;
   services.blueman.enable = true;
   services.dictd = {

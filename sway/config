@@ -6,9 +6,22 @@ input "type:touchpad" {
     tap_button_map lrm
 }
 
-output eDP-1 {
-  background /etc/nixos/backgrounds/castle.png fill
-}
+# output eDP-1 {
+#  background /etc/nixos/backgrounds/castle.png fill
+# }
+
+# output DP-1 {
+#   background /etc/nixos/backgrounds/frame.png fill
+# }
+
+# output HDMI-A-1 {
+#   background /etc/nixos/backgrounds/lighthouse.png fill
+# }
+
+set $wallpapers_path /etc/nixos/backgrounds/
+output eDP-1 bg `find $wallpapers_path -type f | shuf -n 1` fill
+output DP-1 bg `find $wallpapers_path -type f | shuf -n 1` fill
+output HDMI-A-1 bg `find $wallpapers_path -type f | shuf -n 1` fill
 
 set $opacity 0.9
 gaps inner 5
@@ -17,7 +30,7 @@ blur enable
 corner_radius 8
 
 client.unfocused #000000 #302020bb #ffffff
-client.focused #000000 #705020bb #ffffff
+client.focused #000000 #351a4ee5 #ffffff
 
 bar {
     position top
@@ -28,8 +41,8 @@ bar {
 
     colors {
         statusline #ffffff
-        background #302020cc
-        inactive_workspace #323232cc #302020cc #5c5c5caa
+        background #1d0a3691
+        inactive_workspace #213008a9 #302020cc #1e3f11aa
     }
 }
 
