@@ -87,6 +87,8 @@
       vlc
       waytrogen
       chafa
+      vim
+      powertop
       (callPackage ./derivations/hanabi.nix{}).hanabi
       gnomeExtensions.media-controls
       gnomeExtensions.desktop-clock
