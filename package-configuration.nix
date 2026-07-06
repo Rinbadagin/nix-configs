@@ -80,6 +80,9 @@
       ardour
       gnome-tweaks
       # kicad
+      castnow
+      gnomecast
+      # mkchromecast
       devenv
       ripgrep
       libremines
