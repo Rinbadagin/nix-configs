@@ -82,6 +82,7 @@
       # kicad
       castnow
       gnomecast
+      gnome-network-displays
       # mkchromecast
       devenv
       ripgrep
