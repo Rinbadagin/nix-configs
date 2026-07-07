@@ -165,6 +165,7 @@
       rtl_433
       sdrpp
       multimon-ng
+      krita
       #vim
       #strawberry-qt
 # new_pkg
